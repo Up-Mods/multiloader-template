@@ -70,7 +70,7 @@ runs {
     }
 
     data {
-        programArguments.addAll '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+        programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath)
     }
 }
 
