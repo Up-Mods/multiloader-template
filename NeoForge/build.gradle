@@ -9,11 +9,6 @@ if(usingJarJar) {
     jarJar.enable()
 }
 
-configurations {
-    localRuntime
-    runtimeClasspath.extendsFrom(localRuntime)
-}
-
 dependencies {
     implementation neoforge.neoforge
     compileOnly project(":Common")
@@ -23,7 +18,6 @@ dependencies {
     implementation libs.resourcefulconfig.neoforge
 
     // compileOnly "${libs.emi.neoforge.get()}:api"
-    localRuntime libs.emi.neoforge
 }
 
 if(usingJarJar) {
@@ -58,6 +52,10 @@ runs {
         workingDirectory project.file('run')
 
         modSource project.sourceSets.main
+
+        dependencies {
+            runtime libs.emi.neoforge
+        }
     }
     client {
         systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
