@@ -2,7 +2,17 @@ plugins {
     id 'idea'
     alias neoforge.plugins.neogradle
 }
-jarJar.enable()
+
+def usingJarJar = false
+
+if(usingJarJar) {
+    jarJar.enable()
+}
+
+configurations {
+    localRuntime
+    runtimeClasspath.extendsFrom(localRuntime)
+}
 
 dependencies {
     implementation neoforge.neoforge
@@ -11,18 +21,19 @@ dependencies {
     implementation libs.sparkweave.neoforge
 
     implementation libs.resourcefulconfig.neoforge
-    implementation libs.mixin.extras
-    jarJar(libs.mixin.extras) {
-        jarJar.ranged(it, "[${libs.versions.mixin.extras.get()},)")
+
+    // compileOnly "${libs.emi.neoforge.get()}:api"
+    localRuntime libs.emi.neoforge
+}
+
+if(usingJarJar) {
+    jar {
+        archiveClassifier.set("slim")
     }
-}
 
-jar {
-    archiveClassifier.set("slim")
-}
-
-tasks.jarJar.configure {
-    archiveClassifier.set('')
+    tasks.jarJar.configure {
+        archiveClassifier.set('')
+    }
 }
 
 // Automatically enable neoforge AccessTransformers if the file exists
@@ -65,7 +76,7 @@ runs {
     }
 
     server {
-        programArguments.addAll '--nogui'
+        programArguments.add('nogui')
         systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
     }
 
@@ -92,10 +103,12 @@ processResources {
     from project(":Common").sourceSets.main.resources
 }
 
-publishing {
-    publications {
-        "mavenJava${project.name}"(MavenPublication) {
-            jarJar.component(it)
+if(usingJarJar) {
+    publishing {
+        publications {
+            "mavenJava${project.name}"(MavenPublication) {
+                jarJar.component(it)
+            }
         }
     }
 }

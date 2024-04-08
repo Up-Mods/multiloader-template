@@ -15,4 +15,6 @@ dependencies {
 
 	implementation libs.sparkweave
 	implementation libs.resourcefulconfig
+
+	// compileOnly "${libs.emi.asProvider().get()}:api"
 }

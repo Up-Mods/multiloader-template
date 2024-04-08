@@ -29,6 +29,9 @@ dependencies {
 
     modCompileOnly quilt.modmenu
     modLocalRuntime quilt.modmenu
+
+    // modCompileOnly "${libs.emi.fabric.get()}:api"
+	modLocalRuntime libs.emi.fabric
 }
 
 loom {
@@ -70,7 +73,6 @@ loom {
             server()
             setConfigName("Quilt Server")
             ideConfigGenerated(true)
-            programArg("--nogui")
             runDir("run/server")
         }
     }
