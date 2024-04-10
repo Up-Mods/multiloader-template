@@ -54,7 +54,7 @@ runs {
         modSource project.sourceSets.main
 
         dependencies {
-            runtime libs.emi.neoforge
+            runtime libs.emi.neoforge.get()
         }
     }
     client {
