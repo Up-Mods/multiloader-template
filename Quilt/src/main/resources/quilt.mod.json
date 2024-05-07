@@ -24,7 +24,8 @@
     },
     "entrypoints": {
       "init": "dev.upcraft.examplemod.quilt.entrypoints.Main",
-      "client_init": "dev.upcraft.examplemod.quilt.entrypoints.Client"
+      "client_init": "dev.upcraft.examplemod.quilt.entrypoints.Client",
+      "modmenu": "dev.upcraft.examplemod.quilt.entrypoints.Modmenu"
     },
     "depends": [
       {
@@ -43,17 +44,17 @@
         "versions": "=${minecraft_version}"
       },
       {
-        "id": "sparkweave",
-        "mc-publish": {
-          "curseforge": "911456",
-          "modrinth": "nf68xfAw"
-        }
-      },
-      {
         "id": "resourcefulconfig",
         "mc-publish": {
           "curseforge": "714059",
           "modrinth": "M1953qlQ"
+        }
+      },
+      {
+        "id": "commonnetworking",
+        "mc-publish": {
+          "curseforge": "806044",
+          "modrinth": "HIuqnQpi"
         }
       }
     ],

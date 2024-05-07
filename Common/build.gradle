@@ -10,11 +10,12 @@ minecraft {
 }
 
 dependencies {
+	annotationProcessor libs.mixin.extras
 	compileOnly libs.bundles.mixin
     compileOnly libs.jetbrains.annotations
 
-	implementation libs.sparkweave
 	implementation libs.resourcefulconfig
+	implementation libs.commonnetworking
 
 	// compileOnly "${libs.emi.asProvider().get()}:api"
 }
