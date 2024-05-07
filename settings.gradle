@@ -36,6 +36,9 @@ dependencyResolutionManagement {
         neoforge {
             from(files("./NeoForge/libs.versions.toml"))
         }
+        fabric {
+            from(files("./Fabric/libs.versions.toml"))
+        }
     }
 }
 
@@ -56,4 +59,4 @@ buildCache {
 
 rootProject.name = 'ExampleMod'
 
-include 'Common', 'NeoForge', 'Quilt'
+include 'Common', 'NeoForge', 'Quilt', 'Fabric'
