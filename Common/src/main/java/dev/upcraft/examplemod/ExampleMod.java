@@ -1,6 +1,13 @@
 package dev.upcraft.examplemod;
 
-public class ExampleMod {
+import dev.upcraft.sparkweave.api.entrypoint.MainEntryPoint;
+import dev.upcraft.sparkweave.api.platform.ModContainer;
 
-    public static final String MODID = "examplemod";
+public class ExampleMod implements MainEntryPoint {
+    public static final String MOD_ID = "examplemod";
+
+    @Override
+    public void onInitialize(ModContainer mod) {
+
+    }
 }

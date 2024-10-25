@@ -1,4 +1,4 @@
-@Mod.Context(ExampleMod.MODID)
+@Mod.Context(ExampleMod.MOD_ID)
 package dev.upcraft.examplemod.fabric;
 
 import dev.upcraft.examplemod.ExampleMod;
