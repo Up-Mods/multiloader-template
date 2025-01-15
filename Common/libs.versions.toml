@@ -2,11 +2,11 @@
 minecraft = "1.21.1"
 
 # The latest versions are available at https://parchmentmc.org/docs/getting-started
-parchment_minecraft = "1.21"
-parchment_mappings = "2024.07.28"
+parchment_minecraft = "1.21.1"
+parchment_mappings = "2024.11.17"
 
 # https://projects.neoforged.net/neoforged/moddevgradle
-moddevgradle = "2.0.34-beta"
+moddevgradle = "2.0.74"
 # https://projects.neoforged.net/neoforged/neoform
 neoform = "1.21.1-20240808.144430"
 
@@ -17,9 +17,9 @@ asm = "9.7"
 jetbrains_annotations = "25.0.0"
 
 # other dependencies
-sparkweave = "0.502.0" # https://www.curseforge.com/minecraft/mc-mods/sparkweave/files/all
-resourcefulconfig = "3.0.4" # https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/all
-emi = "1.1.14+1.21.1" # https://www.curseforge.com/minecraft/mc-mods/emi/files/all
+sparkweave = "0.507.0" # https://www.curseforge.com/minecraft/mc-mods/sparkweave/files/all
+resourcefulconfig = "3.0.8" # https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/all
+emi = "1.1.19+1.21.1" # https://www.curseforge.com/minecraft/mc-mods/emi/files/all
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
