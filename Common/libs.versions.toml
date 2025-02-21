@@ -6,24 +6,23 @@ parchment_minecraft = "1.21.1"
 parchment_mappings = "2024.11.17"
 
 # https://projects.neoforged.net/neoforged/moddevgradle
-moddevgradle = "2.0.74"
+moddevgradle = "2.0.78"
 # https://projects.neoforged.net/neoforged/neoform
 neoform = "1.21.1-20240808.144430"
 
 # minecraft dependencies
-mixin = "0.15.2+mixin.0.8.7"
+mixin = "0.15.5+mixin.0.8.7"
 mixin_extras = "0.4.1"
-asm = "9.7"
-jetbrains_annotations = "25.0.0"
+asm = "9.7.1"
+jetbrains_annotations = "26.0.2"
 
 # other dependencies
 sparkweave = "0.507.0" # https://www.curseforge.com/minecraft/mc-mods/sparkweave/files/all
-resourcefulconfig = "3.0.8" # https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/all
-emi = "1.1.19+1.21.1" # https://www.curseforge.com/minecraft/mc-mods/emi/files/all
+resourcefulconfig = "3.0.9" # https://beehive.sh/mod/resourcefulconfig
+emi = "1.1.20+1.21.1" # https://www.curseforge.com/minecraft/mc-mods/emi/files/all
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
-parchment_mappings = { module = "org.parchmentmc.data:parchment-1.21", version.ref = "parchment_mappings" }
 mixin = { module = "net.fabricmc:sponge-mixin", version.ref = "mixin" }
 mixin_extras = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixin_extras" }
 asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
