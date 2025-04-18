@@ -11,6 +11,9 @@ dependencies {
     })
     compileOnly project(":Common")
 
+    compileOnly libs.autoservice.annotations
+    annotationProcessor libs.autoservice
+
     modImplementation fabric.fabric.loader
     modImplementation fabric.fabric.api
 

@@ -12,6 +12,9 @@ configurations {
 dependencies {
     compileOnly project(":Common")
 
+    compileOnly libs.autoservice.annotations
+    annotationProcessor libs.autoservice
+
     implementation libs.sparkweave.neoforge
     implementation libs.resourcefulconfig.neoforge
 

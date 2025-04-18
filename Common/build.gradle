@@ -9,6 +9,7 @@ neoForge.neoFormVersion = libs.versions.neoform.get()
 dependencies {
 	compileOnly libs.bundles.mixin
 	compileOnly libs.jetbrains.annotations
+	compileOnly libs.autoservice.annotations
 
 	compileOnly libs.sparkweave
 	compileOnly libs.resourcefulconfig
