@@ -1,5 +1,5 @@
 plugins {
-    alias fabric.plugins.loom
+    alias libs.plugins.fabric.loom
     alias libs.plugins.repositories
 }
 
@@ -14,14 +14,14 @@ dependencies {
     compileOnly libs.autoservice.annotations
     annotationProcessor libs.autoservice
 
-    modImplementation fabric.fabric.loader
-    modImplementation fabric.fabric.api
+    modImplementation libs.fabric.loader
+    modImplementation libs.fabric.api
 
     modImplementation libs.sparkweave.fabric
     modImplementation libs.resourcefulconfig.fabric
 
-    modCompileOnly fabric.modmenu
-    modLocalRuntime fabric.modmenu
+    modCompileOnly libs.modmenu.fabric
+    modLocalRuntime libs.modmenu.fabric
 
     modCompileOnly variantOf(libs.emi.fabric) { classifier 'api' }
     modLocalRuntime libs.emi.fabric
