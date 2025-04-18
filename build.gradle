@@ -76,8 +76,8 @@ subprojects {
 		exclusiveContent {
 			forRepository {
 				maven {
-					name "Modrinth"
-					url "https://api.modrinth.com/maven"
+					name = "Modrinth"
+					url = "https://api.modrinth.com/maven"
 				}
 			}
 			filter {
@@ -144,7 +144,7 @@ subprojects {
 	}
 
 	processResources {
-        filteringCharset "UTF-8"
+        filteringCharset = "UTF-8"
 
 		def expandProps = [
 			"version"                       : version,
@@ -174,7 +174,7 @@ subprojects {
     publishing {
         publications {
             "mavenJava${project.name}"(MavenPublication) {
-				artifactId "${rootProject.name}-${project.name}"
+				artifactId = "${rootProject.name}-${project.name}"
 				from components.java
 			}
         }

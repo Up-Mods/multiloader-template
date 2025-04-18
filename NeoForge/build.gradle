@@ -83,7 +83,7 @@ neoForge {
 
         data {
             data()
-            programArguments.addAll('--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath)
+            programArguments.addAll('--mod', 'sparkweave', '--mod', project.mod_id, '--all', '--flat', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath)
         }
     }
 }

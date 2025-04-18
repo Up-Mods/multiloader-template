@@ -68,15 +68,36 @@ loom {
         server {
             server()
             setConfigName("Fabric Server")
-            ideConfigGenerated(true)
             runDir("run/server")
         }
     }
 }
 
-fabricApi {
-    configureDataGeneration()
+fabricApi.configureDataGeneration {
+    client.set(true)
+    strictValidation.set(true) // '--all' sets '--validate' to true as well
+    modId.set("sparkweave")
 }
+loom.runs.named("datagen").configure {
+    setConfigName("Fabric Data Generation")
+    property("sparkweave.datagen.mods", "${mod_id}")
+}
+
+//tasks.register('generateDatagenDir') {
+//    def datagenDir = project.layout.buildDirectory.dir("datagen")
+//
+//    inputs.dir(datagenDir)
+//            .withPropertyName("datagenDir")
+//            .optional()
+//
+//    doFirst {
+//        datagenDir.get().asFile.mkdirs()
+//    }
+//}
+//
+//tasks.ideaSyncTask.finalizedBy(tasks.generateDatagenDir)
+//tasks.runDatagen.dependsOn(tasks.generateDatagenDir)
+//sourceSets.main.resources { srcDir "src/main/generated" }
 
 tasks.named("compileJava", JavaCompile) {
     source(project(":Common").sourceSets.main.allJava)

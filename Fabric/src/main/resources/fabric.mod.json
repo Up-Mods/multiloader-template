@@ -36,8 +36,6 @@
   "license": "${license_url}",
   "icon": "icon.png",
   "entrypoints": {
-    "main": ["dev.upcraft.examplemod.fabric.entrypoints.Main"],
-    "client": ["dev.upcraft.examplemod.fabric.entrypoints.Client"]
   },
   "custom": {
     "mc-publish": {
