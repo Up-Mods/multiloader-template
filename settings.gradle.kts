@@ -22,7 +22,7 @@ plugins {
 
 rootProject.name = "examplemod"
 
-listOf("common", "fabric", "neoforge").forEach {
+listOf("Common", "Fabric", "NeoForge").forEach {
     include(it)
     project(":$it").name = "${rootProject.name}-$it"
 }

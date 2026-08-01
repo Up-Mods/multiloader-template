@@ -31,21 +31,21 @@ jobs:
         with:
           name: ${{ github.event.repository.name }}-Common-${{ github.sha }}
           path: |
-            common/build/libs/*.jar
+            Common/build/libs/*.jar
       - name: Upload build artifacts (Fabric)
         continue-on-error: true
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: ${{ github.event.repository.name }}-Fabric-${{ github.sha }}
           path: |
-            fabric/build/libs/*.jar
+            Fabric/build/libs/*.jar
       - name: Upload build artifacts (NeoForge)
         continue-on-error: true
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: ${{ github.event.repository.name }}-NeoForge-${{ github.sha }}
           path: |
-            neoforge/build/libs/*.jar
+            NeoForge/build/libs/*.jar
       - name: Run tests
         run: ./gradlew check
       - name: Publish Test Report
