@@ -11,7 +11,7 @@ multiLoader {
 
     loader = "fabric"
 
-    setCommonProject(":${rootProject.name}-common")
+    setCommonProject(":${rootProject.name}-Common")
     applyMetadataReplacements(listOf("pack.mcmeta", "*.mixins.json", "fabric.mod.json"), mapOf(
         "fabric_api_version" to libs.versions.fabric.api,
         "fabric_loader_version" to libs.versions.fabric.loader

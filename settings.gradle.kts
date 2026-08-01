@@ -20,7 +20,7 @@ plugins {
     id("dev.upcraft.gradle.multiloader.settings") version "0.2.1"
 }
 
-rootProject.name = "examplemod"
+rootProject.name = "ExampleMod"
 
 listOf("Common", "Fabric", "NeoForge").forEach {
     include(it)

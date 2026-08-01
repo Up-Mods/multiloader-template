@@ -14,7 +14,7 @@ multiLoader {
 
     loader = "neoforge"
 
-    setCommonProject(":${rootProject.name}-common")
+    setCommonProject(":${rootProject.name}-Common")
     applyMetadataReplacements(listOf("pack.mcmeta", "*.mixins.json", "META-INF/neoforge.mods.toml"), mapOf(
         "neoforge_version" to libs.versions.neoforge
     ))
