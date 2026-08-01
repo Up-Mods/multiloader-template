@@ -1,4 +1,4 @@
-package dev.upcraft.examplemod;
+package dev.upcraft.examplemod.client;
 
 import com.google.auto.service.AutoService;
 import dev.upcraft.sparkweave.api.entrypoint.ClientEntryPoint;
