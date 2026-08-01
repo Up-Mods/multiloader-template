@@ -2,7 +2,7 @@ package dev.upcraft.examplemod.datagen.client;
 
 import dev.upcraft.sparkweave.api.datagen.ContextAwarePackOutput;
 import dev.upcraft.sparkweave.api.datagen.TranslationBuilder;
-import dev.upcraft.sparkweave.api.datagen.provider.SparkweaveLanguageProvider;
+import dev.upcraft.sparkweave.api.datagen.provider.client.SparkweaveLanguageProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.locale.Language;
 
@@ -17,5 +17,7 @@ public class ExamplemodEnglishLanguageProvider extends SparkweaveLanguageProvide
     @Override
     public void generateTranslations(HolderLookup.Provider registries, TranslationBuilder builder) {
         builder.add("examplemod.title", "Example Mod");
+        builder.add("examplemod.config.links.website", "Website");
+        builder.add("examplemod.config.links.discord", "Discord");
     }
 }
