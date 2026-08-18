@@ -36,6 +36,8 @@ dependencies {
     implementation(libs.resourcefulconfig.neoforge)
 
     implementation(libs.sparkweave.neoforge)
+    accessTransformers(libs.sparkweave)
+    interfaceInjectionData(libs.sparkweave)
 }
 
 neoForge {
