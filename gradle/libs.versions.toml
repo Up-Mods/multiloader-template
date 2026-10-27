@@ -9,17 +9,17 @@ neoform = "26.1.2-1"
 
 # NeoForge
 # https://projects.neoforged.net/neoforged/neoforge
-neoforge = "26.1.2.116"
+neoforge = "26.1.2.124"
 
 # Fabric
 # https://fabricmc.net/develop
-fabric_loom = "1.18.4" # https://maven.fabricmc.net/net/fabricmc/fabric-loom/net.fabricmc.fabric-loom.gradle.plugin/
-fabric_loader = "0.19.5"
-fabric_api = "0.155.3+26.1.2"
+fabric_loom = "1.19.3" # https://maven.fabricmc.net/net/fabricmc/fabric-loom/net.fabricmc.fabric-loom.gradle.plugin/
+fabric_loader = "0.20.1"
+fabric_api = "0.165.0+26.3"
 
 # Mods
 # https://maven.blamejared.com/mezz/jei/jei-26.1.2-common/
-jei = "29.43.0.107"
+jei = "29.47.0.111"
 # https://modrinth.com/mod/modmenu/versions
 modmenu = "18.0.2"
 # https://beehive.sh/mod/resourcefulconfig/versions
