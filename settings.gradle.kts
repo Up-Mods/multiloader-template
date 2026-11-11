@@ -15,6 +15,7 @@ pluginManagement {
 }
 
 plugins {
+    id("dev.lukebemish.jvmfinder-convention") version "0.1.3"
     // https://github.com/Up-Mods/multiloader-gradle-plugin
     id("dev.upcraft.gradle.multiloader.settings") version "0.4.3"
 }
