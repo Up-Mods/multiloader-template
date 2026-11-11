@@ -17,7 +17,7 @@ pluginManagement {
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
     // https://github.com/Up-Mods/multiloader-gradle-plugin
-    id("dev.upcraft.gradle.multiloader.settings") version "0.3.0"
+    id("dev.upcraft.gradle.multiloader.settings") version "0.4.3"
 }
 
 rootProject.name = "ExampleMod"
